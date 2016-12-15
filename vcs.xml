@@ -26,6 +26,10 @@
           <option name="url" value="https://github.com/lperpinya1974/Serializable.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/sgolivernet/curso-android-gms-fb/tree/master/android-localizacion-1" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\ALUMNEDAM\AndroidStudioProjects" />
