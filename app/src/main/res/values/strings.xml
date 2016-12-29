@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Activitat-3-ANDROID</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="actualizar">Actualizar</string>
+    <string name="mensaje"></string>
 </resources>
