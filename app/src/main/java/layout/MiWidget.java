@@ -152,7 +152,7 @@ public class MiWidget extends AppWidgetProvider {
 
         //Alternativa 1: m�todo rawQuery()
         //Cursor c = db.rawQuery("SELECT codigo, nombre FROM Usuarios", null);
-
+        Cursor c = db.rawQuery("SELECT id_assignatura FROM horaris WHERE hora BETWEEN hora_inici AND hora_fi AND grup like '%A1%'" , null);
         //Alternativa 2: m�todo delete()
         //String[] campos = new String[] {"codigo", "nombre"};
         //Cursor c = db.query("Usuarios", campos, null, null, null, null, null);
@@ -163,19 +163,14 @@ public class MiWidget extends AppWidgetProvider {
 
 
         //Recorremos los resultados para mostrarlos en pantalla
-        /*LblMensaje.setText("");
+        LblMensaje.setText("");
         if (c.moveToFirst()) {
             //Recorremos el cursor hasta que no haya m�s registros
             do {
-                String cod = c.getString(0);
-                String nom = c.getString(1);
-
-                LblMensaje.append(" " + cod + " - " + nom + "\n");
+                String asignatura = c.getString(0);
+                LblMensaje.append(asignatura);
             } while(c.moveToNext());
-        }*/
-
-
-
+        }
 
 
 

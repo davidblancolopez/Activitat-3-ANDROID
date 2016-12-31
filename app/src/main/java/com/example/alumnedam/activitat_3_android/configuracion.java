@@ -1,6 +1,8 @@
 package com.example.alumnedam.activitat_3_android;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,19 +40,29 @@ public class configuracion extends AppCompatActivity implements View.OnClickList
 
 
 
-
+    Spinner spinnerClase=(Spinner) findViewById(R.id.spinnerClase);
+    String opcion = spinnerClase.getSelectedItem().toString();
 
 
 
 
     /**
-     * Boton de enviar y el menu de seleccion de FECHA.
+     *
      * @param v
      */
     @Override
     public void onClick(View v){
 
         if (v.getId() == R.id.buttonAceptar){
+
+
+
+            //Guardamos las preferencias
+            SharedPreferences prefs = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
+
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putString("clase", opcion);
+            editor.commit();
 
             Intent intent = new Intent (this, MainActivity.class);
 
