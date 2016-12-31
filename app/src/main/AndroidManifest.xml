@@ -25,6 +25,8 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/mi_widget_info" />
         </receiver>
+
+        <activity android:name=".configuracion"></activity>
     </application>
 
 </manifest>

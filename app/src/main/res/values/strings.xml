@@ -5,4 +5,16 @@
 
     <string name="actualizar">Actualizar</string>
     <string name="mensaje"></string>
+    <string name="hora"></string>
+    <string name="config">Configuración</string>
+    <string name="clase">Clase</string>
+    <string name="Aceptar">Aceptar</string>
+
+
+
+    <string-array name="clase">
+        <item>A1</item>
+        <item>A2</item>
+    </string-array>
+
 </resources>

@@ -1,8 +1,12 @@
 package com.example.alumnedam.activitat_3_android;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.view.View;
+
+import java.util.HashMap;
 
 /**
  * Created by dblan on 29/12/2016.
@@ -20,6 +24,15 @@ public class BDCreador extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+        //SENTENCIAS PARA CREAR LAS TABLAS
+        db.execSQL(sqlCreate[0]);
+        db.execSQL(sqlCreate[1]);
+        db.execSQL(sqlCreate[2]);
+
+        //SENTENCIAS PARA INSERTAR DATOS EN LAS TABLAS
+        db.execSQL(sqlInserts[0]);
+        db.execSQL(sqlInserts[1]);
+        db.execSQL(sqlInserts[2]);
 
         sqlCreate[0] = "CREATE TABLE horari (id_horari INTEGER, grup TEXT, id_assignatura TEXT, hora_inici TEXT, hora_fi TEXT, dia_setmana INTEGER)";
 
@@ -87,8 +100,6 @@ public class BDCreador extends SQLiteOpenHelper {
 
 
 
-
-
     }
 
 
@@ -98,6 +109,9 @@ public class BDCreador extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+
+
+
 
         /*LUNES = 2, MARTES = 3, DOMINGO = 0*/
 
