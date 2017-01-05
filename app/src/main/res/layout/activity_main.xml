@@ -10,12 +10,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.alumnedam.activitat_3_android.MainActivity">
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Curs:" />
+
+            <Spinner
+                android:id="@+id/spinnerCurs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/clase"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </TableRow>
+    </TableLayout>
+
     <Button
-        android:text="@string/config"
+        android:text="@string/Aceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/btnAceptar"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
-        android:id="@+id/buttonConfiguracion" />
+        android:layout_marginTop="82dp" />
+
 </RelativeLayout>
