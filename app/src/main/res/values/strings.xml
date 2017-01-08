@@ -7,7 +7,7 @@
     <string name="mensaje"></string>
     <string name="hora"></string>
     <string name="config">Configuración</string>
-    <string name="clase">Clase</string>
+    <string name="clase">Clase: </string>
     <string name="Aceptar">Aceptar</string>
 
 
@@ -15,5 +15,20 @@
         <item>A1</item>
         <item>A2</item>
     </string-array>
+
+
+    <string-array name="color">
+        <item>Vermell</item>
+        <item>Blau</item>
+        <item>Verd</item>
+        <item>Groc</item>
+        <item>Taronja</item>
+        <item>Violeta</item>
+        <item>Rosa</item>
+        <item>Blanc</item>
+    </string-array>
+
+
+    <string name="color">Color: </string>
 
 </resources>
