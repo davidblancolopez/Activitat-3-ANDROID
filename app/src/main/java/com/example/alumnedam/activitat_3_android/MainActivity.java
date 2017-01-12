@@ -1,29 +1,44 @@
 package com.example.alumnedam.activitat_3_android;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //Inicializamos el boton
+        Button buttonEnviar = (Button) findViewById(R.id.buttonConfiguracion);
+        //Le aplicamos un clickListener
+        buttonEnviar.setOnClickListener(this);
     }
 
-    String horari = "CREATE TABLE horari (id_horari INTEGER, grup TEXT, codi_assignatura TEXT, hora_inici TEXT, hora_fi TEXT, dia_setmana INTEGER)";
 
-    String assignatura = "CREATE TABLE assignatura (id_assignatura TEXT, assignatura TEXT, id_professor INTEGER)";
+    /**
+     * Boton de enviar y el menu de seleccion de FECHA.
+     * @param v
+     */
+    @Override
+    public void onClick(View v){
 
-    String professors = "CREATE TABLE professors (id_professor TEXT, nom_professor TEXT)";
+        if (v.getId() == R.id.buttonConfiguracion){
 
-    String [] sentenciaINSERTassignatura = {"INSERT INTO assignatura (1, M2-M5-M6, )"};
+            Intent intent = new Intent (this, configuracion.class);
 
-    String [] sentenciasINSERTprofessors = {"INSERT INTO professors (1, Jorge Rubio)", "INSERT INTO professors (2, Josefa Gonzalez)" ,
-            "INSERT INTO professors (3, Jose Antonio Leo)", "INSERT INTO professors (4, Lluis Maria Perpinya)" ,"INSERT INTO professors (5, Marta Planas)"};
+            startActivity(intent);
+            finish();
+        }
+    }
+
+
 }
