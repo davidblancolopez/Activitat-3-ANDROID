@@ -46,6 +46,10 @@
           <option name="url" value="https://github.com/davidblancolopez/Activitat-3-ANDROID.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/lperpinya1974/ScreenEvents" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\ALUMNEDAM\AndroidStudioProjects" />
