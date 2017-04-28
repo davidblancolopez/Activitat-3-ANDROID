@@ -66,6 +66,10 @@
           <option name="url" value="https://github.com/libgdx/libgdx-demo-cuboc.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/biros95/AirHockeyDam.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\ALUMNEDAM\AndroidStudioProjects" />
